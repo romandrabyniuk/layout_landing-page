@@ -73,10 +73,11 @@
 
   &__phone:hover &__phone-number {
     transform: translateY(-50%) translateX(0);
-    visibility: visible;
+    visibility: hidden;
     opacity: 0;
 
     @include on-desktop {
+      visibility: visible;
       opacity: 1;
     }
   }
