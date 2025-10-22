@@ -40,6 +40,7 @@
     top: 50%;
     right: 50px;
     transform: translateY(-50%) translateX(10px);
+    cursor: pointer;
 
     padding: 8px 12px;
 
@@ -73,6 +74,10 @@
   &__phone:hover &__phone-number {
     transform: translateY(-50%) translateX(0);
     visibility: visible;
-    opacity: 1;
+    opacity: 0;
+
+    @include on-desktop {
+      opacity: 1;
+    }
   }
 }
